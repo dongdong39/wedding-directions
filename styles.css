@@ -715,6 +715,27 @@ tr:last-child td {
     color: #999;
 }
 
+/* Note Text */
+.note-text {
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    padding: 4px 24px;
+    line-height: 1.8;
+}
+
+/* Wide Button */
+.btn-wide {
+    padding: 12px 48px;
+    font-size: 14px;
+}
+
+.btn-group.center {
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
 /* Footer */
 footer {
     background: #f5f3f0;
