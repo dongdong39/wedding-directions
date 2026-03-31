@@ -12,47 +12,53 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="박현수🤍신하정 오시는길">
     <meta name="twitter:description" content="수원 메리빌리아 더 프레스티지 웨딩홀">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>MARRYVILIA the Prestige</h1>
-            <p class="subtitle">오시는 길</p>
+            <p class="header-eng">MARRYVILIA the Prestige</p>
+            <h1>오시는 길</h1>
+            <div class="header-line"></div>
             <div class="venue-info">
-                <p>📍 경기도 수원시 권선구 세화로 116</p>
-                <p>📞 031-293-5579</p>
-                <p>🕐 토요일 오후 1시 30분 예식</p>
+                <p class="venue-address">경기도 수원시 권선구 세화로 116</p>
+                <p class="venue-tel">Tel. 031-293-5579</p>
+                <p class="venue-date">토요일 오후 1시 30분</p>
             </div>
         </header>
 
-        <div class="section-divider">· · ·</div>
-
         <!-- 수원역에서 가는 길 동영상 -->
-        <section class="map-section">
-            <h2>🎬 수원역에서 걸어오는 길</h2>
-            <div class="video-section">
-                <div class="video-wrapper">
-                    <a href="https://www.youtube.com/watch?v=PnpmKfZJgOk&t=21s" target="_blank" class="video-thumbnail">
-                        <img src="https://img.youtube.com/vi/PnpmKfZJgOk/hqdefault.jpg" alt="수원역에서 메리빌리아 가는 길">
-                        <div class="play-button">▶</div>
-                    </a>
-                </div>
-                <p class="video-caption">터치하면 유튜브에서 재생됩니다</p>
+        <section class="section">
+            <div class="section-title-wrap">
+                <p class="section-label">Walking Route</p>
+                <h2>수원역에서 걸어오는 길</h2>
             </div>
-            <div class="map-link-box center">
-                <a href="https://map.kakao.com/?q=메리빌리아더프레스티지" target="_blank" class="link-btn map">카카오맵에서 보기</a>
-                <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="link-btn map naver">네이버 지도에서 보기</a>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/PnpmKfZJgOk"
+                    title="수원역에서 메리빌리아 가는 길"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="btn-group">
+                <a href="https://map.kakao.com/?q=메리빌리아더프레스티지" target="_blank" class="btn btn-kakao">카카오맵</a>
+                <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="btn btn-naver">네이버 지도</a>
             </div>
         </section>
 
-        <div class="section-divider">· · ·</div>
+        <div class="divider"></div>
 
         <!-- 교통수단 선택 -->
-        <nav class="transport-selector">
-            <h2>어떻게 오시나요?</h2>
+        <section class="section">
+            <div class="section-title-wrap">
+                <p class="section-label">Transportation</p>
+                <h2>어떻게 오시나요?</h2>
+            </div>
             <div class="transport-buttons">
                 <button class="transport-btn" data-target="ktx">
                     <span class="btn-icon">🚄</span>
@@ -71,409 +77,294 @@
                     <span class="btn-text">자가용으로</span>
                 </button>
             </div>
-        </nav>
+        </section>
 
         <!-- 1. 동대구역 KTX -->
         <section id="ktx" class="transport-section">
-            <h2>🚄 동대구역에서 KTX</h2>
+            <div class="section-title-wrap">
+                <h2>동대구역에서 KTX</h2>
+            </div>
 
-            <div class="step-group">
+            <div class="card">
                 <h3>STEP 1. KTX 예매하기</h3>
-                <div class="info-box highlight">
-                    <p><strong>동대구역 → 수원역</strong> (약 1시간 50분~2시간)</p>
-                    <p>요금: 편도 약 31,300원</p>
+                <div class="info-highlight">
+                    <p><strong>동대구역 → 수원역</strong></p>
+                    <p>약 1시간 50분~2시간 · 편도 약 31,300원</p>
                 </div>
 
-                <div class="train-table">
-                    <h4>🎯 오시는 열차 추천 (토요일 기준)</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>추천</th>
-                                <th>열차</th>
-                                <th>동대구 출발</th>
-                                <th>수원 도착</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="recommend-1">
-                                <td><span class="badge best">1순위</span></td>
-                                <td>KTX 122</td>
-                                <td><strong>09:08</strong></td>
-                                <td><strong>10:58</strong></td>
-                            </tr>
-                            <tr class="recommend-2">
-                                <td><span class="badge good">2순위</span></td>
-                                <td>KTX 172</td>
-                                <td><strong>11:05</strong></td>
-                                <td><strong>13:01</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="arrival-detail">
-                        <h4>⏱ 예상 도착 시간</h4>
-                        <div class="timeline">
-                            <p><strong>1순위 (09:08 출발)</strong></p>
-                            <div class="timeline-item">
-                                <span class="timeline-time">10:58</span>
-                                <span>수원역 도착</span>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-time">11:23</span>
-                                <span>메리빌리아 도착 (도보 25분)</span>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-time" style="color:#6a8a5c;">여유</span>
-                                <span><strong>약 2시간 7분</strong> 여유 — 카페에서 쉬기 좋아요 ☕</span>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="timeline">
-                            <p><strong>2순위 (11:05 출발)</strong></p>
-                            <div class="timeline-item">
-                                <span class="timeline-time">13:01</span>
-                                <span>수원역 도착</span>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-time">13:26</span>
-                                <span>메리빌리아 도착 (도보 25분)</span>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-time" style="color:#c48b5c;">여유</span>
-                                <span><strong>약 4분</strong> 여유 — 여유가 적습니다</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 카페 안내 (1순위 선택 시) -->
-                <div class="cafe-box">
-                    <h4>☕ 일찍 도착하셨다면</h4>
-                    <p class="cafe-name">카페라운지116</p>
-                    <p class="cafe-location">메리빌리아 건물 3층 · 예식장 안에 있어요!</p>
-
-                    <div class="cafe-menu">
-                        <div class="menu-item">
-                            <span class="name">아메리카노</span>
-                            <span class="price">5,000원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">카페라떼</span>
-                            <span class="price">5,500원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">바닐라빈라떼</span>
-                            <span class="price">5,800원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">카페모카</span>
-                            <span class="price">5,800원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">레몬에이드</span>
-                            <span class="price">5,700원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">녹차라떼</span>
-                            <span class="price">6,000원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">시오빵(소금빵)</span>
-                            <span class="price">3,500원</span>
-                        </div>
-                        <div class="menu-item">
-                            <span class="name">크로아상</span>
-                            <span class="price">4,300원</span>
-                        </div>
-                    </div>
-
-                    <p class="cafe-hours">영업시간: 09:00~20:00 (월·화 휴무) · ☎ 0507-1469-2103</p>
-
-                    <div class="map-link-box">
-                        <a href="https://naver.me/Gi0Ubbas" target="_blank" class="link-btn cafe-link">카페라운지116 네이버 지도 →</a>
-                    </div>
-                </div>
-
-                <div class="info-box warning">
-                    <p>💡 SRT는 수원역에 정차하지 않습니다. <strong>KTX만</strong> 이용 가능해요.</p>
-                </div>
-
-                <div class="info-box">
-                    <p>⚠️ 위 시간표는 참고용입니다. 예매 시 코레일에서 꼭 확인하세요.</p>
-                    <a href="https://www.korail.com/ticket/reserve/train-timeTable" target="_blank" class="link-btn korail">코레일 시간표 확인 →</a>
-                </div>
-            </div>
-
-            <div class="step-group">
-                <h3>STEP 2. 수원역 → 메리빌리아 걸어오기</h3>
-                <div class="walk-info">
-                    <div class="walk-badge">도보 약 7분</div>
-                </div>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <p>수원역 <strong>2번 또는 3번 출구</strong>로 나오세요</p>
-                            <p class="step-detail">(롯데타임빌라스 / 세화로 방면)</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <p><strong>세화로</strong>를 따라 직진하세요</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <p><strong>롯데타임빌라스</strong>를 지나면</p>
-                            <p class="step-detail">바로 메리빌리아가 보입니다</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-link-box">
-                    <a href="https://map.kakao.com/?sName=수원역&eName=메리빌리아더프레스티지" target="_blank" class="link-btn map">📱 카카오맵 길찾기</a>
-                    <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="link-btn map naver">📱 네이버 지도 길찾기</a>
-                </div>
-            </div>
-
-            <!-- 돌아가는 열차 -->
-            <div class="step-group return-section">
-                <h3>STEP 3. 돌아가는 열차 (수원역 → 동대구역)</h3>
-                <div class="info-box highlight">
-                    <p>예식 후 오후 3~4시경 출발 기준 추천 열차입니다.</p>
-                </div>
-
-                <div class="return-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>열차</th>
-                                <th>수원 출발</th>
-                                <th>동대구 도착</th>
-                                <th>소요시간</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="return-recommend">
-                                <td><strong>KTX 125</strong></td>
-                                <td><strong>16:41</strong></td>
-                                <td><strong>18:33</strong></td>
-                                <td>1시간 52분</td>
-                            </tr>
-                            <tr>
-                                <td><strong>KTX 127</strong></td>
-                                <td><strong>19:33</strong></td>
-                                <td><strong>21:26</strong></td>
-                                <td>1시간 53분</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="info-box">
-                    <p>💡 <strong>KTX 125 (16:41)</strong>가 가장 추천! 식사 후 바로 이동하기 좋아요.</p>
-                    <p>여유롭게 머물고 싶다면 <strong>KTX 127 (19:33)</strong>도 있습니다.</p>
-                </div>
-
-                <h4>일반열차도 있어요</h4>
+                <h4>오시는 열차 추천 (토요일 기준)</h4>
                 <table>
                     <thead>
                         <tr>
+                            <th>추천</th>
                             <th>열차</th>
-                            <th>수원 출발</th>
-                            <th>동대구 도착</th>
-                            <th>요금</th>
+                            <th>동대구 출발</th>
+                            <th>수원 도착</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>무궁화 1161</td>
-                            <td>15:23</td>
-                            <td>18:38</td>
-                            <td>18,500원</td>
+                        <tr class="row-highlight">
+                            <td><span class="badge badge-primary">1순위</span></td>
+                            <td>KTX 122</td>
+                            <td><strong>09:08</strong></td>
+                            <td><strong>10:58</strong></td>
                         </tr>
                         <tr>
-                            <td>ITX-마음 1021</td>
-                            <td>16:12</td>
-                            <td>19:16</td>
-                            <td>27,400원</td>
-                        </tr>
-                        <tr>
-                            <td>ITX-새마을 1023</td>
-                            <td>17:19</td>
-                            <td>20:12</td>
-                            <td>27,400원</td>
-                        </tr>
-                        <tr>
-                            <td>ITX-마음 1025</td>
-                            <td>20:50</td>
-                            <td>23:47</td>
-                            <td>27,400원</td>
+                            <td><span class="badge badge-secondary">2순위</span></td>
+                            <td>KTX 172</td>
+                            <td><strong>11:05</strong></td>
+                            <td><strong>13:01</strong></td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="info-box">
-                    <a href="https://www.korail.com/ticket/reserve/train-timeTable" target="_blank" class="link-btn korail">코레일에서 예매하기 →</a>
+                <div class="timeline-box">
+                    <h4>예상 도착 시간</h4>
+                    <div class="timeline-group">
+                        <p class="timeline-label">1순위 (09:08 출발)</p>
+                        <div class="timeline-item"><span class="t-time">10:58</span><span>수원역 도착</span></div>
+                        <div class="timeline-item"><span class="t-time">11:23</span><span>메리빌리아 도착 (도보 25분)</span></div>
+                        <div class="timeline-item"><span class="t-time t-good">여유</span><span><strong>약 2시간 7분</strong> — 카페에서 쉬기 좋아요</span></div>
+                    </div>
+                    <div class="timeline-group">
+                        <p class="timeline-label">2순위 (11:05 출발)</p>
+                        <div class="timeline-item"><span class="t-time">13:01</span><span>수원역 도착</span></div>
+                        <div class="timeline-item"><span class="t-time">13:26</span><span>메리빌리아 도착 (도보 25분)</span></div>
+                        <div class="timeline-item"><span class="t-time t-warn">여유</span><span><strong>약 4분</strong> — 여유가 적습니다</span></div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- 카페 안내 -->
+            <div class="card cafe-card">
+                <h3>일찍 도착하셨다면</h3>
+                <p class="cafe-name">카페라운지116</p>
+                <p class="cafe-sub">메리빌리아 건물 3층 · 예식장 안에 있어요!</p>
+                <div class="cafe-menu">
+                    <div class="menu-item"><span>아메리카노</span><span>5,000원</span></div>
+                    <div class="menu-item"><span>카페라떼</span><span>5,500원</span></div>
+                    <div class="menu-item"><span>바닐라빈라떼</span><span>5,800원</span></div>
+                    <div class="menu-item"><span>카페모카</span><span>5,800원</span></div>
+                    <div class="menu-item"><span>레몬에이드</span><span>5,700원</span></div>
+                    <div class="menu-item"><span>녹차라떼</span><span>6,000원</span></div>
+                    <div class="menu-item"><span>시오빵(소금빵)</span><span>3,500원</span></div>
+                    <div class="menu-item"><span>크로아상</span><span>4,300원</span></div>
+                </div>
+                <p class="cafe-hours">09:00~20:00 (월·화 휴무) · 0507-1469-2103</p>
+                <a href="https://naver.me/Gi0Ubbas" target="_blank" class="btn btn-outline">카페 위치 보기</a>
+            </div>
+
+            <div class="card card-note">
+                <p>SRT는 수원역에 정차하지 않습니다. <strong>KTX만</strong> 이용 가능합니다.</p>
+            </div>
+            <div class="card card-note">
+                <p>위 시간표는 참고용입니다. 예매 시 꼭 확인하세요.</p>
+                <a href="https://www.korail.com/ticket/reserve/train-timeTable" target="_blank" class="btn btn-dark">코레일 시간표 확인</a>
+            </div>
+
+            <div class="card">
+                <h3>STEP 2. 수원역에서 걸어오기</h3>
+                <div class="walk-badge">도보 약 7분</div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div class="step-text">
+                            <p>수원역 <strong>2번 또는 3번 출구</strong>로 나오세요</p>
+                            <p class="sub">(롯데타임빌라스 / 세화로 방면)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div class="step-text"><p><strong>세화로</strong>를 따라 직진하세요</p></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div class="step-text">
+                            <p><strong>롯데타임빌라스</strong>를 지나면</p>
+                            <p class="sub">바로 메리빌리아가 보입니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="https://map.kakao.com/?sName=수원역&eName=메리빌리아더프레스티지" target="_blank" class="btn btn-kakao">카카오맵 길찾기</a>
+                    <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="btn btn-naver">네이버 지도 길찾기</a>
+                </div>
+            </div>
+
+            <!-- 돌아가는 열차 -->
+            <div class="card">
+                <h3>STEP 3. 돌아가는 열차</h3>
+                <p class="card-desc">수원역 → 동대구역 · 예식 후 오후 3~4시 출발 기준</p>
+                <table>
+                    <thead>
+                        <tr><th>열차</th><th>수원 출발</th><th>동대구 도착</th><th>소요시간</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row-highlight"><td><strong>KTX 125</strong></td><td><strong>16:41</strong></td><td><strong>18:33</strong></td><td>1시간 52분</td></tr>
+                        <tr><td><strong>KTX 127</strong></td><td><strong>19:33</strong></td><td><strong>21:26</strong></td><td>1시간 53분</td></tr>
+                    </tbody>
+                </table>
+                <div class="info-highlight">
+                    <p><strong>KTX 125 (16:41)</strong> 추천! 식사 후 바로 이동하기 좋아요.</p>
+                    <p>여유롭게 머물고 싶다면 <strong>KTX 127 (19:33)</strong>도 있습니다.</p>
+                </div>
+
+                <h4>일반열차</h4>
+                <table>
+                    <thead><tr><th>열차</th><th>수원 출발</th><th>동대구 도착</th><th>요금</th></tr></thead>
+                    <tbody>
+                        <tr><td>무궁화 1161</td><td>15:23</td><td>18:38</td><td>18,500원</td></tr>
+                        <tr><td>ITX-마음 1021</td><td>16:12</td><td>19:16</td><td>27,400원</td></tr>
+                        <tr><td>ITX-새마을 1023</td><td>17:19</td><td>20:12</td><td>27,400원</td></tr>
+                        <tr><td>ITX-마음 1025</td><td>20:50</td><td>23:47</td><td>27,400원</td></tr>
+                    </tbody>
+                </table>
+                <a href="https://www.korail.com/ticket/reserve/train-timeTable" target="_blank" class="btn btn-dark">코레일에서 예매하기</a>
             </div>
         </section>
 
         <!-- 2. 지하철 -->
         <section id="subway" class="transport-section">
-            <h2>🚇 지하철로 오시는 길</h2>
+            <div class="section-title-wrap">
+                <h2>지하철로 오시는 길</h2>
+            </div>
 
-            <div class="step-group">
+            <div class="card">
                 <h3>수원역 하차</h3>
-                <div class="info-box highlight">
+                <div class="info-highlight">
                     <p><strong>1호선</strong> 또는 <strong>수인분당선</strong> → <strong>수원역</strong> 하차</p>
                 </div>
-
-                <div class="subway-lines">
-                    <div class="line-info">
-                        <span class="line-badge line-1">1호선</span>
-                        <span>서울역 / 용산 / 안양 / 군포 방면에서 수원역 하차</span>
+                <div class="line-list">
+                    <div class="line-item">
+                        <span class="line-badge" style="background:#0052A4;">1호선</span>
+                        <span>서울역 / 용산 / 안양 / 군포 방면</span>
                     </div>
-                    <div class="line-info">
-                        <span class="line-badge line-suin">수인분당선</span>
-                        <span>왕십리 / 수서 / 죽전 / 기흥 방면에서 수원역 하차</span>
+                    <div class="line-item">
+                        <span class="line-badge" style="background:#F5A200;">수인분당선</span>
+                        <span>왕십리 / 수서 / 죽전 / 기흥 방면</span>
                     </div>
                 </div>
             </div>
 
-            <div class="step-group">
-                <h3>수원역 → 메리빌리아 걸어오기</h3>
-                <div class="walk-info">
-                    <div class="walk-badge">도보 약 7분</div>
-                </div>
+            <div class="card">
+                <h3>수원역에서 걸어오기</h3>
+                <div class="walk-badge">도보 약 7분</div>
                 <div class="steps">
                     <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
+                        <div class="step-num">1</div>
+                        <div class="step-text">
                             <p>수원역 <strong>2번 또는 3번 출구</strong>로 나오세요</p>
-                            <p class="step-detail">(롯데타임빌라스 / 세화로 방면)</p>
+                            <p class="sub">(롯데타임빌라스 / 세화로 방면)</p>
                         </div>
                     </div>
                     <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <p><strong>세화로</strong>를 따라 직진</p>
-                        </div>
+                        <div class="step-num">2</div>
+                        <div class="step-text"><p><strong>세화로</strong>를 따라 직진</p></div>
                     </div>
                     <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <p><strong>롯데타임빌라스</strong>를 지나면 바로 <strong>메리빌리아</strong>입니다</p>
-                        </div>
+                        <div class="step-num">3</div>
+                        <div class="step-text"><p><strong>롯데타임빌라스</strong>를 지나면 바로 <strong>메리빌리아</strong>입니다</p></div>
                     </div>
                 </div>
-                <div class="map-link-box">
-                    <a href="https://map.kakao.com/?sName=수원역&eName=메리빌리아더프레스티지" target="_blank" class="link-btn map">📱 카카오맵 길찾기</a>
-                    <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="link-btn map naver">📱 네이버 지도 길찾기</a>
+                <div class="btn-group">
+                    <a href="https://map.kakao.com/?sName=수원역&eName=메리빌리아더프레스티지" target="_blank" class="btn btn-kakao">카카오맵 길찾기</a>
+                    <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="btn btn-naver">네이버 지도 길찾기</a>
                 </div>
             </div>
         </section>
 
         <!-- 3. 버스 -->
         <section id="bus" class="transport-section">
-            <h2>🚌 버스로 오시는 길</h2>
+            <div class="section-title-wrap">
+                <h2>버스로 오시는 길</h2>
+            </div>
 
-            <div class="step-group">
-                <div class="info-box highlight">
+            <div class="card">
+                <div class="info-highlight">
                     <p><strong>수원역 환승센터</strong>에서 내리시면 도보 7분입니다.</p>
                 </div>
 
-                <h3>수원역 환승센터 경유 주요 버스</h3>
-                <div class="bus-list">
-                    <div class="bus-category">
-                        <h4>일반버스</h4>
-                        <div class="bus-numbers">
-                            <span class="bus-num general">18</span>
-                            <span class="bus-num general">131</span>
-                            <span class="bus-num general">134</span>
-                            <span class="bus-num general">135</span>
-                            <span class="bus-num general">221</span>
-                        </div>
+                <h4>수원역 환승센터 경유</h4>
+                <div class="bus-group">
+                    <p class="bus-label">일반버스</p>
+                    <div class="bus-nums">
+                        <span class="bus-tag green">18</span>
+                        <span class="bus-tag green">131</span>
+                        <span class="bus-tag green">134</span>
+                        <span class="bus-tag green">135</span>
+                        <span class="bus-tag green">221</span>
                     </div>
-                    <div class="bus-category">
-                        <h4>광역·좌석버스</h4>
-                        <div class="bus-numbers">
-                            <span class="bus-num express">4100</span>
-                            <span class="bus-num express">7770</span>
-                            <span class="bus-num express">900</span>
-                            <span class="bus-num express">999</span>
-                            <span class="bus-num express">1007</span>
-                        </div>
+                </div>
+                <div class="bus-group">
+                    <p class="bus-label">광역·좌석버스</p>
+                    <div class="bus-nums">
+                        <span class="bus-tag blue">4100</span>
+                        <span class="bus-tag blue">7770</span>
+                        <span class="bus-tag blue">900</span>
+                        <span class="bus-tag blue">999</span>
+                        <span class="bus-tag blue">1007</span>
                     </div>
                 </div>
 
-                <h3>메리빌리아 근처 (세화로 방면) 버스</h3>
-                <div class="bus-list">
-                    <div class="bus-category">
-                        <div class="bus-numbers">
-                            <span class="bus-num general">22-1</span>
-                            <span class="bus-num general">22-2</span>
-                            <span class="bus-num general">42</span>
-                            <span class="bus-num general">51</span>
-                            <span class="bus-num express">1004</span>
-                        </div>
+                <h4>메리빌리아 근처 (세화로 방면)</h4>
+                <div class="bus-group">
+                    <div class="bus-nums">
+                        <span class="bus-tag green">22-1</span>
+                        <span class="bus-tag green">22-2</span>
+                        <span class="bus-tag green">42</span>
+                        <span class="bus-tag green">51</span>
+                        <span class="bus-tag blue">1004</span>
                     </div>
                 </div>
-
-                <div class="info-box">
-                    <p>💡 정확한 버스 노선과 시간은 아래에서 검색하세요.</p>
-                    <a href="https://map.kakao.com/?eName=메리빌리아더프레스티지" target="_blank" class="link-btn map">📱 카카오맵 버스 경로 검색</a>
-                </div>
+                <a href="https://map.kakao.com/?eName=메리빌리아더프레스티지" target="_blank" class="btn btn-kakao">카카오맵 버스 경로 검색</a>
             </div>
         </section>
 
         <!-- 4. 자차 -->
         <section id="car" class="transport-section">
-            <h2>🚗 자가용으로 오시는 길</h2>
+            <div class="section-title-wrap">
+                <h2>자가용으로 오시는 길</h2>
+            </div>
 
-            <div class="step-group">
+            <div class="card">
                 <h3>네비게이션 검색</h3>
-                <div class="info-box highlight navi">
-                    <p class="navi-label">네비게이션 주소</p>
+                <div class="navi-box">
+                    <p class="navi-label">주소</p>
                     <p class="navi-address">경기도 수원시 권선구 세화로 116</p>
-                    <p class="navi-detail">(서둔동 389)</p>
-                    <p class="navi-search">또는 <strong>"메리빌리아 더 프레스티지"</strong> 검색</p>
+                    <p class="navi-sub">(서둔동 389)</p>
+                    <p class="navi-or">또는 <strong>"메리빌리아 더 프레스티지"</strong> 검색</p>
                 </div>
 
-                <h3>고속도로 이용 시</h3>
-                <div class="highway-routes">
-                    <div class="route">
-                        <div class="route-name">경부고속도로</div>
-                        <div class="route-detail">
-                            <strong>수원신갈IC</strong> → 수원역 방면
-                            <p class="route-note">대구/부산 방면에서 오실 때 추천</p>
+                <h4>고속도로 이용 시</h4>
+                <div class="route-list">
+                    <div class="route-item">
+                        <span class="route-badge">경부고속도로</span>
+                        <div>
+                            <p><strong>수원신갈IC</strong> → 수원역 방면</p>
+                            <p class="sub">대구/부산 방면에서 오실 때 추천</p>
                         </div>
                     </div>
-                    <div class="route">
-                        <div class="route-name">영동고속도로</div>
-                        <div class="route-detail">
-                            <strong>동수원IC</strong> 또는 <strong>북수원IC</strong> → 수원역 방면
-                        </div>
+                    <div class="route-item">
+                        <span class="route-badge">영동고속도로</span>
+                        <div><p><strong>동수원IC</strong> 또는 <strong>북수원IC</strong> → 수원역 방면</p></div>
                     </div>
                 </div>
 
-                <h3>주차 안내</h3>
-                <div class="parking-info">
-                    <div class="parking-badge">🅿️ 실내주차장 600대</div>
-                    <p class="parking-detail">2시간 무료 주차</p>
+                <h4>주차 안내</h4>
+                <div class="parking-box">
+                    <p class="parking-main">실내주차장 600대</p>
+                    <p class="parking-sub">2시간 무료 주차</p>
                 </div>
 
-                <div class="map-link-box">
-                    <a href="https://map.kakao.com/?eName=메리빌리아더프레스티지" target="_blank" class="link-btn map">📱 카카오맵 길찾기</a>
-                    <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="link-btn map naver">📱 네이버 지도 길찾기</a>
+                <div class="btn-group">
+                    <a href="https://map.kakao.com/?eName=메리빌리아더프레스티지" target="_blank" class="btn btn-kakao">카카오맵 길찾기</a>
+                    <a href="https://map.naver.com/p/search/메리빌리아더프레스티지" target="_blank" class="btn btn-naver">네이버 지도 길찾기</a>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p><strong>수원 메리빌리아 더 프레스티지</strong></p>
+            <p>수원 메리빌리아 더 프레스티지</p>
             <p>경기도 수원시 권선구 세화로 116 · 031-293-5579</p>
         </footer>
     </div>
