@@ -752,15 +752,22 @@ tr:last-child td {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    padding-left: 4px;
     transition: all 0.2s;
-}
-
-.play-button svg {
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
 }
 
 .video-thumbnail:hover .play-button,
 .video-thumbnail:active .play-button {
+    background: rgba(196, 139, 92, 0.85);
     transform: translate(-50%, -50%) scale(1.1);
 }
 
