@@ -26,140 +26,7 @@
         <section class="map-section">
             <h2>약도</h2>
             <div class="simple-map">
-                <svg viewBox="0 0 460 620" xmlns="http://www.w3.org/2000/svg" font-family="'Pretendard Variable', -apple-system, sans-serif">
-                    <defs>
-                        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                            <polygon points="0 0, 8 3, 0 6" fill="#c48b5c"/>
-                        </marker>
-                        <marker id="arrowhead-dark" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                            <polygon points="0 0, 8 3, 0 6" fill="#5a4a3a"/>
-                        </marker>
-                        <filter id="shadow1">
-                            <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.1"/>
-                        </filter>
-                        <filter id="shadow2">
-                            <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#c48b5c" flood-opacity="0.3"/>
-                        </filter>
-                        <linearGradient id="stationGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#6a5a4a"/>
-                            <stop offset="100%" stop-color="#4a3a2a"/>
-                        </linearGradient>
-                        <linearGradient id="venueGrad" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#d4a574"/>
-                            <stop offset="100%" stop-color="#b8845a"/>
-                        </linearGradient>
-                        <pattern id="railPattern" width="20" height="6" patternUnits="userSpaceOnUse">
-                            <rect width="12" height="2" y="0" fill="#888"/>
-                            <rect width="12" height="2" y="4" fill="#888"/>
-                        </pattern>
-                    </defs>
-
-                    <!-- 배경 -->
-                    <rect width="460" height="620" fill="#faf8f5" rx="16"/>
-
-                    <!-- ===== 도로 그리드 ===== -->
-                    <!-- 세로 도로 - 세화로 -->
-                    <rect x="160" y="0" width="55" height="620" fill="#eae4dc"/>
-                    <!-- 세로 도로 중앙선 -->
-                    <line x1="187.5" y1="145" x2="187.5" y2="620" stroke="#d8d0c5" stroke-width="1.5" stroke-dasharray="10,8"/>
-
-                    <!-- 가로 도로 - 수원역 앞 -->
-                    <rect x="0" y="130" width="460" height="48" fill="#eae4dc"/>
-                    <!-- 가로 도로 중앙선 -->
-                    <line x1="0" y1="154" x2="460" y2="154" stroke="#d8d0c5" stroke-width="1.5" stroke-dasharray="10,8"/>
-
-                    <!-- 가로 도로 - 메리빌리아 옆 -->
-                    <rect x="215" y="350" width="245" height="35" fill="#eae4dc"/>
-
-                    <!-- 가로 도로 - 하단 -->
-                    <rect x="0" y="510" width="460" height="35" fill="#eae4dc"/>
-
-                    <!-- 세로 도로 - 오른쪽 -->
-                    <rect x="390" y="130" width="40" height="420" fill="#eae4dc"/>
-
-                    <!-- 도로 이름 - 세화로 -->
-                    <rect x="170" y="555" width="46" height="18" fill="rgba(255,255,255,0.8)" rx="9"/>
-                    <text x="193" y="568" font-size="10" fill="#b0a090" text-anchor="middle" font-weight="600">세화로</text>
-
-                    <!-- ===== 철도 ===== -->
-                    <rect x="0" y="82" width="460" height="16" fill="#e0d8ce"/>
-                    <rect x="0" y="84" width="460" height="12" fill="url(#railPattern)"/>
-
-                    <!-- ===== 수원역 광장 ===== -->
-                    <ellipse cx="188" cy="50" rx="85" ry="40" fill="#f0ebe4" stroke="#e0d8ce" stroke-width="1"/>
-                    <text x="188" y="45" font-size="13" fill="#8a7a6a" text-anchor="middle" font-weight="600">수원역</text>
-                    <text x="188" y="62" font-size="11" fill="#b0a090" text-anchor="middle">광장</text>
-
-                    <!-- ===== 수원역 ===== -->
-                    <rect x="140" y="90" width="96" height="42" fill="url(#stationGrad)" rx="10" filter="url(#shadow1)"/>
-                    <text x="188" y="109" font-size="14" fill="#fff" text-anchor="middle" font-weight="700">수원역</text>
-                    <text x="188" y="124" font-size="8.5" fill="rgba(255,255,255,0.65)" text-anchor="middle">KTX · 1호선 · 수인분당선</text>
-
-                    <!-- ===== 2번, 3번 출구 ===== -->
-                    <circle cx="172" cy="148" r="14" fill="#5a4a3a"/>
-                    <text x="172" y="153" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">②</text>
-
-                    <circle cx="204" cy="148" r="14" fill="#5a4a3a"/>
-                    <text x="204" y="153" font-size="13" fill="#fff" text-anchor="middle" font-weight="700">③</text>
-
-                    <!-- ===== 도보 이동 경로 ===== -->
-                    <!-- 출구 → 아래로 → 오른쪽으로 꺾어서 메리빌리아로 -->
-                    <path d="M 192 168 L 192 260 L 192 350 L 260 350 L 310 420"
-                          stroke="#c48b5c" stroke-width="2.5" stroke-dasharray="7,5"
-                          fill="none" marker-end="url(#arrowhead)"/>
-
-                    <!-- 도보이동 라벨 -->
-                    <rect x="200" y="240" width="68" height="22" fill="#fff" rx="11" stroke="#c48b5c" stroke-width="1.5"/>
-                    <text x="234" y="255" font-size="10" fill="#c48b5c" text-anchor="middle" font-weight="700">도보이동 7분</text>
-
-                    <!-- ===== 롯데백화점 & 타임빌라스 ===== -->
-                    <rect x="228" y="190" width="135" height="100" fill="#f5f0ea" rx="10" stroke="#ddd5ca" stroke-width="1.5" filter="url(#shadow1)"/>
-                    <text x="295" y="228" font-size="12" fill="#6a5a4a" text-anchor="middle" font-weight="700">롯데백화점 &amp;</text>
-                    <text x="295" y="245" font-size="12" fill="#6a5a4a" text-anchor="middle" font-weight="700">타임빌라스</text>
-                    <text x="295" y="265" font-size="9.5" fill="#b0a090" text-anchor="middle">(구 롯데몰)</text>
-
-                    <!-- ===== 수원메쎄 ===== -->
-                    <rect x="30" y="290" width="80" height="40" fill="#f0ebe4" rx="8" stroke="#ddd5ca" stroke-width="1"/>
-                    <text x="70" y="315" font-size="11" fill="#8a7a6a" text-anchor="middle" font-weight="600">수원메쎄</text>
-
-                    <!-- ===== 한라비발디퍼스트 ===== -->
-                    <rect x="20" y="440" width="105" height="35" fill="#f0ebe4" rx="8" stroke="#ddd5ca" stroke-width="1"/>
-                    <text x="72" y="462" font-size="10" fill="#8a7a6a" text-anchor="middle" font-weight="600">한라비발디퍼스트</text>
-
-                    <!-- ===== 메리빌리아 (메인 건물) ===== -->
-                    <rect x="290" y="395" width="120" height="110" fill="url(#venueGrad)" rx="14" filter="url(#shadow2)"/>
-
-                    <!-- 건물 아이콘 - 기둥 스타일 -->
-                    <line x1="320" y1="430" x2="320" y2="460" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
-                    <line x1="340" y1="425" x2="340" y2="460" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
-                    <line x1="360" y1="425" x2="360" y2="460" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
-                    <line x1="380" y1="430" x2="380" y2="460" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
-                    <!-- 지붕 -->
-                    <path d="M 310 432 L 350 410 L 390 432" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-
-                    <text x="350" y="480" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">MARRYVILIA</text>
-                    <text x="350" y="495" font-size="9" fill="rgba(255,255,255,0.8)" text-anchor="middle">더 프레스티지</text>
-
-                    <!-- ===== 자차 진입 화살표 ===== -->
-                    <path d="M 445 530 L 410 530 L 410 505"
-                          stroke="#5a4a3a" stroke-width="2" fill="none" marker-end="url(#arrowhead-dark)"/>
-                    <text x="448" y="534" font-size="9" fill="#aaa" text-anchor="start">자차</text>
-
-                    <!-- 오른쪽에서 진입 화살표 -->
-                    <path d="M 440 367 L 410 367 L 410 400"
-                          stroke="#5a4a3a" stroke-width="2" fill="none" marker-end="url(#arrowhead-dark)"/>
-
-                    <!-- ===== 하단 정보 말풍선 ===== -->
-                    <rect x="100" y="565" width="260" height="45" fill="#5a4a3a" rx="12"/>
-                    <!-- 말풍선 꼬리 -->
-                    <polygon points="230,565 240,552 250,565" fill="#5a4a3a"/>
-                    <text x="230" y="584" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">메리빌리아 더 프레스티지 웨딩홀</text>
-                    <text x="230" y="601" font-size="10" fill="rgba(255,255,255,0.65)" text-anchor="middle">경기도 수원시 권선구 서둔동 389</text>
-
-                    <!-- ===== 주차 배지 ===== -->
-                    <rect x="290" y="515" width="120" height="24" fill="#f0f5ed" rx="12" stroke="#c8d8c0" stroke-width="1"/>
-                    <text x="350" y="531" font-size="9.5" fill="#6a8a5c" text-anchor="middle" font-weight="600">🅿 600대 · 2시간 무료</text>
-                </svg>
+                <img src="map.png" alt="수원 메리빌리아 약도" style="width:100%; border-radius:14px;">
             </div>
             <div class="map-link-box center">
                 <a href="https://map.kakao.com/?q=메리빌리아더프레스티지" target="_blank" class="link-btn map">카카오맵에서 보기</a>
@@ -169,16 +36,18 @@
             <!-- 수원역에서 가는 길 동영상 -->
             <div class="video-section">
                 <h3>🎬 수원역에서 걸어오는 길 영상</h3>
-                <div class="video-wrapper video-embed">
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/PnpmKfZJgOk?start=21&rel=0"
-                        title="수원역에서 메리빌리아 가는 길"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
+                <div class="video-wrapper">
+                    <a href="https://www.youtube.com/watch?v=PnpmKfZJgOk&t=21s" target="_blank" class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/PnpmKfZJgOk/hqdefault.jpg" alt="수원역에서 메리빌리아 가는 길">
+                        <div class="play-button">
+                            <svg width="68" height="48" viewBox="0 0 68 48">
+                                <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FF0000"/>
+                                <path d="M45 24L27 14v20" fill="#fff"/>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
+                <p class="video-caption">영상 업로더 설정으로 임베드가 제한되어, 터치하면 유튜브에서 재생됩니다</p>
             </div>
         </section>
 
