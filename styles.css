@@ -713,6 +713,39 @@ tr:last-child td {
     display: block;
 }
 
+/* Video Section */
+.video-section {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid #f0ebe4;
+}
+
+.video-section h3 {
+    font-size: 17px;
+    color: #5a4a3a;
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
 /* Footer */
 footer {
     background: #5a4a3a;
