@@ -29,8 +29,53 @@ strong {
 /* Header */
 header {
     background: #f5f3f0;
-    padding: 56px 20px 44px;
+    padding: 56px 24px 48px;
     text-align: center;
+}
+
+.greeting {
+    font-size: 16px;
+    font-weight: 300;
+    color: #3a3a3a;
+    line-height: 2;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.couple-name {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2c2c2c;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.wedding-date {
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.greeting-sub {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    line-height: 2;
+}
+
+.header-line {
+    width: 40px;
+    height: 1px;
+    background: #ccc;
+    margin: 20px auto;
+}
+
+/* Venue Section */
+.venue-section {
+    padding: 28px 24px;
+    text-align: center;
+    background: #fff;
 }
 
 .header-eng {
@@ -38,33 +83,20 @@ header {
     letter-spacing: 3px;
     color: #999;
     font-weight: 300;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     text-transform: uppercase;
 }
 
-header h1 {
-    font-size: 26px;
-    font-weight: 400;
-    color: #2c2c2c;
-    letter-spacing: 4px;
-    margin-bottom: 16px;
-}
-
-.header-line {
-    width: 40px;
-    height: 1px;
-    background: #ccc;
-    margin: 0 auto 20px;
-}
-
-.venue-info {
-    font-size: 14px;
-    color: #666;
-    line-height: 2;
-}
-
 .venue-address {
+    font-size: 14px;
+    color: #555;
     letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.venue-tel {
+    font-size: 13px;
+    color: #999;
 }
 
 .venue-tel,
