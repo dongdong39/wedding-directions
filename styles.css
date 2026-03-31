@@ -716,11 +716,17 @@ tr:last-child td {
 }
 
 /* Note Text */
+.note-area {
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .note-text {
     font-size: 13px;
     color: #999;
     text-align: center;
-    padding: 4px 24px;
     line-height: 1.8;
 }
 
